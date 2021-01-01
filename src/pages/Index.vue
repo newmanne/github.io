@@ -5,16 +5,18 @@
     <section id="about">
     <heading>About</heading>
 
-    <p>Hi, I'm Neil Newman, a PhD student in the UBC Computer Science department. My supervisor is <a href="http://www.cs.ubc.ca/~kevinlb/index.html">Kevin
-      Leyton-Brown</a>. I am a member of the <a href="http://www.cs.ubc.ca/labs/beta/">Algorithms Lab</a> (formerly BETA) and the <a
-      href="https://www.cs.ubc.ca/cs-research/lci">Laboratory for Computational Intelligence.</a> 
-      <br/>
-      My research interests lie at the intersection of Artifical Intelligence and Microeconomics; I have particularly focused on computational tools to facilitate and analyze complex auctions (mostly applied to spectrum auctions).
-      <br/>
-      I was awarded  an NSERC CGSD and a British Columbia Graduate Scholarship.
-      I received the Exemplary Paper in the AI and Computation Track Award at EC'20, and was part of a large team that won the 2018 INFORMS Franz Edelman Award for Achievement in Operations Research and the Management Sciences. 
-      I was an Associate Workflow Chair for AAAI'21.
-    </p>
+          <q-img src="~assets/neil.jpg" width="100px" style="float: left;" class="q-mr-md"/>
+          <p>Hi, I'm Neil Newman, a PhD student in the UBC Computer Science department. My supervisor is <a href="http://www.cs.ubc.ca/~kevinlb/index.html">Kevin
+            Leyton-Brown</a>. I am a member of the <a href="http://www.cs.ubc.ca/labs/beta/">Algorithms Lab</a> (formerly BETA) and the <a
+            href="https://www.cs.ubc.ca/cs-research/lci">Laboratory for Computational Intelligence.</a></p>
+
+          <p>My research interests lie at the intersection of Artifical Intelligence and Microeconomics; I have particularly focused on computational tools to facilitate and analyze complex auctions (mostly applied to spectrum auctions).</p>
+         <p>
+        I was awarded  an NSERC CGSD and a British Columbia Graduate Scholarship.
+        I received the Exemplary Paper in the AI and Computation Track Award at EC'20, and was part of a large team that won the 2018 INFORMS Franz Edelman Award for Achievement in Operations Research and the Management Sciences. 
+        I was an Associate Workflow Chair for AAAI'21.
+         </p>
+
     </section>
 
     <section-separator/>
@@ -25,6 +27,8 @@
 
     <div>
       <p class="text-h5">Incentive Auction</p>
+      <q-img src="~assets/interference.png" width="400px"/>
+
       <p>Over 13 months in 2016–17 the US Federal Communications Commission (FCC) conducted an <a href="https://www.fcc.gov/about-fcc/fcc-initiatives/incentive-auctions">Incentive Auction</a> to repurpose radio spectrum from broadcast television to wireless internet. 
       I helped design <a href="http://www.cs.ubc.ca/labs/beta/Projects/SATFC/">SATFC</a>, a specialized solver used in the auction to solve station repacking problems. 
       Through this work, I was one of a large team that won the <span style="font-weight: bold;">2018 INFORMS Franz Edelman Award for Achievement in Operations Research and the Management Sciences</span>.</p>

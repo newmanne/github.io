@@ -21,6 +21,7 @@
 </script>
 
 <style scoped>
+    /* https://www.labnol.org/internet/embed-responsive-google-maps/28333/ */
     .google-maps {
         position: relative;
         padding-bottom: 75%; 
