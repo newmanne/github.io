@@ -3,13 +3,13 @@
     <q-header elevated class="bg-cyan-8">
       <q-toolbar>
         <q-toolbar-title>Neil Newman</q-toolbar-title>
-        <q-btn flat @click="right = !right" round dense icon="menu"/>
+        <!-- <q-btn flat @click="right = !right" round dense icon="menu"/> -->
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="right" side="right" bordered>
+    <!-- <q-drawer show-if-above v-model="right" side="right" bordered> -->
       <!-- drawer content -->
-    </q-drawer>
+    <!-- </q-drawer> -->
 
     <q-page-container>
       <router-view/>

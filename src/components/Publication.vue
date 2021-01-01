@@ -14,13 +14,15 @@
       <span v-if="entry.MONTH"><span class="month">{{ entry.MONTH }}</span>, </span>
       <span v-if="entry.YEAR"><span class="year">{{ entry.YEAR }}</span>.</span>
       <span v-else>.</span>
+      <span v-if="entry.NOTE"><br/><span class="note text-red">{{ entry.NOTE }}</span></span>
 
       <div>
-        <a v-if="entry.FILE" :href="'/statics/publications/' + entry.FILE" target="_blank">[pdf]</a>
+        <template v-if="entry.FILE"><a :href="'/statics/publications/' + entry.FILE" target="_blank">[pdf]</a>&nbsp</template>
+        <template v-if="entry.TALK"><a :href="entry.TALK">[talk]</a>&nbsp</template>
         <a v-if="entry.DOI" :href="' https://doi.org/' + entry.DOI">[doi]</a>
-        <a role="button" data-toggle="collapse" :href="'#' + entry.BIBTEXKEY + '-bib'" aria-expanded="false" :aria-controls="entry.BIBTEXKEY + '-bib'">
+        <!-- <a role="button" data-toggle="collapse" :href="'#' + entry.BIBTEXKEY + '-bib'" aria-expanded="false" :aria-controls="entry.BIBTEXKEY + '-bib'">
           [bib]
-        </a>
+        </a> -->
       </div>
     </div>
   </div>
