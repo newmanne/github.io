@@ -1,7 +1,8 @@
 <template>
-  <q-page class="bg-grey-3 q-py-md q-px-lg" style="font-family:Lato">
+  <q-page class="bg-grey-3 q-py-md q-px-lg" style="font-family:Lato, sans-serif">
 
-    <!-- <q-img src="~assets/neil.jpg" :ratio="16/2"/></q-img> -->
+    <!-- <q-img src="~assets/neil.jpg" rounded/> -->
+    <section id="about">
     <heading>About</heading>
 
     <p>Hi, I'm Neil Newman, a PhD student in the UBC Computer Science department. My supervisor is <a href="http://www.cs.ubc.ca/~kevinlb/index.html">Kevin
@@ -14,8 +15,12 @@
       I received the Exemplary Paper in the AI and Computation Track Award at EC'20, and was part of a large team that won the 2018 INFORMS Franz Edelman Award for Achievement in Operations Research and the Management Sciences. 
       I was an Associate Workflow Chair for AAAI'21.
     </p>
+    </section>
+
+    <section-separator/>
 
     <!--  Projects Section -->
+    <section id="projects">
     <heading>Selected Projects</heading>
 
     <div>
@@ -30,6 +35,9 @@
       <p class="text-h5">The Positronic Economist</p>
       <p>The <a href="https://www.cs.ubc.ca/research/posec/"> Positronic Economist</a> is software designed to translate high-level mechanism descriptions into Bayesian Action Graph Games.</p>
     </div>
+    </section>
+
+    <section-separator/>
 
     <!--  Publications Section -->
     <heading>Publications</heading>
@@ -38,6 +46,8 @@
         <publication :entry="entry" />
       </q-item>
     </q-list>
+
+    <section-separator/>
 
     <heading>Education</heading>
     <q-timeline color="secondary">
@@ -67,6 +77,7 @@
       </q-timeline-entry>
     </q-timeline>
 
+    <section-separator/>
 
     <heading>Selected Employment</heading>
     <q-timeline color="secondary">
@@ -94,30 +105,24 @@
       </q-timeline-entry>
     </q-timeline>
 
+    <section-separator/>
 
     <!-- <q-icon name="fab fa-github"/> -->
     <!--  Links Section -->
     <heading>Links</heading>
-    <div class="list item-inset-delimiter">
-      <div class="item">  
-        <q-icon class="item-primary" name="info"/>
-        <div class="item-content">https://github.com/newmanne</div>
-      </div>
-    </div>
+    <ul>
+      <li><q-icon name="fab fa-github"/>&nbsp <a href="https://github.com/newmanne">Github</a></li>
+      <li><i class="ai ai-google-scholar-square"></i>&nbsp <a href="https://scholar.google.ca/citations?hl=en&user=r-VhDbwAAAAJ">Google Scholar</a></li>
+      <li><q-icon name="fab fa-linkedin"/>&nbsp <a href="https://www.linkedin.com/in/neil-newman-86008667">LinkedIn</a></li>
+    </ul>
 
-
-    <!-- <ul style="list-style-type: none;">
-      <span class="label"><i class="icon fa-github"></i>
-      <li><a href="https://github.com/newmanne"><i class="item-primary">icon fa-github</i>Github</a></li>
-      <li><a href="https://scholar.google.ca/citations?hl=en&user=r-VhDbwAAAAJ" class="ai ai-google-scholar-square"><span
-        class="label"> Google Scholar</span></a></li>
-      <li><a href="https://www.linkedin.com/in/neil-newman-86008667"><span class="label"><i class="icon fa-linkedin"></i> LinkedIn</span></a></li>
-    </ul> -->
-
+    <section-separator/>
 
     <!--  Contact Section -->
     <heading>Contact</heading>
     <contact/>
+
+    <section-separator/>
 
     <heading>Miscellaneous</heading>
     <ul>
@@ -145,13 +150,15 @@
   import Publication from '../components/Publication'
   import Contact from '../components/Contact'
   import Heading from '../components/Heading'
-  
+  import SectionSeparator from '../components/SectionSeparator'
+
   export default {
     name: 'PageIndex',
     components: {
       Contact,
       Publication,
       Heading,
+      SectionSeparator
     },
     data: () => {
       return {
