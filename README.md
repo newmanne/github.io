@@ -1,3 +1,11 @@
+Notes: to update run
+
+`quasar build`
+`yarn deploy`
+
+then in settings/pages on GH you may have to readd the domain for the CNAME record
+
+
 # Neil Newman (neilnewman)
 
 My personal website
