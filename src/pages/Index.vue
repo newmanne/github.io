@@ -2,25 +2,50 @@
   <q-page class="bg-grey-3 q-py-md q-px-lg" style="font-family:Lato, sans-serif">
 
     <!-- <q-img src="~assets/neil.jpg" rounded/> -->
-    <section id="about">
-    <heading>About</heading>
+<section id="about">
+  <heading>About</heading>
 
-          <q-img src="~assets/neil.jpg" width="100px" style="float: left;" class="q-mr-md"/>
-          <p>Hi, I'm Neil Newman, a PhD student in the UBC Computer Science department. My supervisor is <a href="http://www.cs.ubc.ca/~kevinlb/index.html">Kevin
-            Leyton-Brown</a>. I am a member of the <a href="http://www.cs.ubc.ca/labs/beta/">Algorithms Lab</a> (formerly BETA) and the <a
-            href="https://www.cs.ubc.ca/cs-research/lci">Laboratory for Computational Intelligence.</a></p>
+  <div class="q-gutter-md">
+    <div class="q-col">
+      <div style="float: left; margin-right: 1rem;">
+        <q-img src="~assets/headshot_small.jpeg" width="250px" />
+      </div>
+      <div>
+        <p>
+          Hi, I'm Neil Newman, a PhD student in the UBC Computer Science department. My supervisor is
+          <a href="http://www.cs.ubc.ca/~kevinlb/index.html">Kevin Leyton-Brown</a>. I am a member of the
+          <a href="http://www.cs.ubc.ca/labs/beta/">Algorithms Lab</a> (formerly BETA) and the
+          <a href="https://www.cs.ubc.ca/cs-research/lci">Laboratory for Computational Intelligence.</a>
+        </p>
 
-          <p>My research interests lie at the intersection of Artifical Intelligence and Microeconomics; I have particularly focused on computational tools to facilitate and analyze complex auctions (mostly applied to spectrum auctions).</p>
-         <p>
-        I was awarded  an NSERC CGSD and a British Columbia Graduate Scholarship.
-        I received the Exemplary Paper in the AI and Computation Track Award at EC'20, and was part of a large team that won the 2018 INFORMS Franz Edelman Award for Achievement in Operations Research and the Management Sciences. 
-        I was an Associate Workflow Chair for AAAI'21.
-         </p>
+        <p>
+          My research interests lie at the intersection of Artificial Intelligence and Microeconomics; I have particularly focused on
+          computational tools to facilitate and analyze complex auctions (mostly applied to spectrum auctions).
+        </p>
+        <p>
+          I was awarded an NSERC CGSD and a British Columbia Graduate Scholarship. I received the Exemplary Paper in the AI and Computation
+          Track Award at EC'20, and was part of a large team that won the 2018 INFORMS Franz Edelman Award for Achievement in Operations
+          Research and the Management Sciences. I was an Associate Workflow Chair for AAAI'21.
+        </p>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+  </div>
+</section>
 
-    </section>
+  <section-separator/>
 
-    <section-separator/>
+  <!-- <q-icon name="fab fa-github"/> -->
+  <!--  Links Section -->
+  <heading>Links</heading>
+  <ul>
+    <li><q-icon name="fab fa-github"/>&nbsp <a href="https://github.com/newmanne">Github</a></li>
+    <li><i class="ai ai-google-scholar-square"></i>&nbsp <a href="https://scholar.google.ca/citations?hl=en&user=r-VhDbwAAAAJ">Google Scholar</a></li>
+    <li><q-icon name="fab fa-linkedin"/>&nbsp <a href="https://www.linkedin.com/in/neil-newman-86008667">LinkedIn</a></li>
+  </ul>
 
+
+<section-separator/>
     <!--  Projects Section -->
     <section id="projects">
     <heading>Selected Projects</heading>
@@ -34,9 +59,11 @@
       Through this work, I was one of a large team that won the <span style="font-weight: bold;">2018 INFORMS Franz Edelman Award for Achievement in Operations Research and the Management Sciences</span>.</p>
 
       <p class="text-h5">Kudu</p>
+      <q-img src="~assets/transactions_map.png" width="400px"/>
       <p><a href="http://kudu.ug/">Kudu</a> is a mobile market for agricultural trade in Uganda. It also has an <a href="https://play.google.com/store/apps/details?id=com.kudu.market&fbclid=IwAR1L_U7IguiA3YBlpW6ZPBUduQmfmbKw3Eixcgqd82W-wQ1Ihq5e8-VlMvE">Android Application</a>.</p>
 
       <p class="text-h5">The Positronic Economist</p>
+      <q-img src="~assets/wbsi_fig2.jpg" width="200px"/>
       <p>The <a href="https://www.cs.ubc.ca/research/posec/"> Positronic Economist</a> is software designed to translate high-level mechanism descriptions into Bayesian Action Graph Games.</p>
     </div>
     </section>
@@ -111,16 +138,6 @@
 
     <section-separator/>
 
-    <!-- <q-icon name="fab fa-github"/> -->
-    <!--  Links Section -->
-    <heading>Links</heading>
-    <ul>
-      <li><q-icon name="fab fa-github"/>&nbsp <a href="https://github.com/newmanne">Github</a></li>
-      <li><i class="ai ai-google-scholar-square"></i>&nbsp <a href="https://scholar.google.ca/citations?hl=en&user=r-VhDbwAAAAJ">Google Scholar</a></li>
-      <li><q-icon name="fab fa-linkedin"/>&nbsp <a href="https://www.linkedin.com/in/neil-newman-86008667">LinkedIn</a></li>
-    </ul>
-
-    <section-separator/>
 
     <!--  Contact Section -->
     <heading>Contact</heading>
